@@ -1,0 +1,318 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2095, in list
+    exceptions.raise_from_response(response)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/exceptions.py", line 250, in raise_from_response
+    raise cls(
+openstack.exceptions.HttpException: HttpException: 500: Server Error for url: https://public.forwizlab.com:8774/v2.1/servers/detail?all_tenants=True, Unexpected API Error. Please report this at http://bugs.launchpad.net/nova/ and attach the Nova API log if possible.
+<class 'neutronclient.common.exceptions.NeutronClientException'>
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2095, in list
+    exceptions.raise_from_response(response)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/exceptions.py", line 250, in raise_from_response
+    raise cls(
+openstack.exceptions.HttpException: HttpException: 500: Server Error for url: https://public.forwizlab.com:8774/v2.1/servers/detail?all_tenants=True, Unexpected API Error. Please report this at http://bugs.launchpad.net/nova/ and attach the Nova API log if possible.
+<class 'neutronclient.common.exceptions.ServiceUnavailable'>
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2095, in list
+    exceptions.raise_from_response(response)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/exceptions.py", line 250, in raise_from_response
+    raise cls(
+openstack.exceptions.HttpException: HttpException: 504: Server Error for url: https://public.forwizlab.com:8774/v2.1/servers/detail?all_tenants=True, 504 Gateway Time-out: The server didn't respond in time.: 
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 73, in <module>
+    time.sleep(3)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2095, in list
+    exceptions.raise_from_response(response)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/exceptions.py", line 250, in raise_from_response
+    raise cls(
+openstack.exceptions.HttpException: HttpException: 504: Server Error for url: https://public.forwizlab.com:8774/v2.1/servers/detail?all_tenants=True, 504 Gateway Time-out: The server didn't respond in time.: 
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1014, in _send_request
+    resp = self.session.request(method, url, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1030, in _send_request
+    raise exceptions.ConnectFailure(msg)
+keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to https://public.forwizlab.com:8774/v2.1/servers/detail: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 218, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f9898a763a0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9898a763a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1014, in _send_request
+    resp = self.session.request(method, url, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9898a763a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2089, in list
+    response = session.get(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/adapter.py", line 395, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/proxy.py", line 190, in request
+    response = super().request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/adapter.py", line 257, in request
+    return self.session.request(url, method, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 923, in request
+    resp = send(**kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1045, in _send_request
+    return self._send_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1030, in _send_request
+    raise exceptions.ConnectFailure(msg)
+keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to https://public.forwizlab.com:8774/v2.1/servers/detail: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9898a763a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 70, in <module>
+    start_http_server(18080)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/prometheus_client/exposition.py", line 170, in start_wsgi_server
+    httpd = make_server(addr, port, app, TmpServer, handler_class=_SilentHandler)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/wsgiref/simple_server.py", line 154, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1014, in _send_request
+    resp = self.session.request(method, url, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1030, in _send_request
+    raise exceptions.ConnectFailure(msg)
+keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to https://public.forwizlab.com:8774/v2.1/servers/detail: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connection.py", line 218, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7eff6f3a83a0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7eff6f3a83a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1014, in _send_request
+    resp = self.session.request(method, url, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7eff6f3a83a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/openstack_exporter/main.py", line 74, in <module>
+    server_list = list(conn.compute.servers(all_projects=True))
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/resource.py", line 2089, in list
+    response = session.get(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/adapter.py", line 395, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/openstack/proxy.py", line 190, in request
+    response = super().request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/adapter.py", line 257, in request
+    return self.session.request(url, method, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 923, in request
+    resp = send(**kwargs)
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1045, in _send_request
+    return self._send_request(
+  File "/home/ubuntu/anaconda3/envs/openstack_exporter/lib/python3.9/site-packages/keystoneauth1/session.py", line 1030, in _send_request
+    raise exceptions.ConnectFailure(msg)
+keystoneauth1.exceptions.connection.ConnectFailure: Unable to establish connection to https://public.forwizlab.com:8774/v2.1/servers/detail: HTTPSConnectionPool(host='public.forwizlab.com', port=8774): Max retries exceeded with url: /v2.1/servers/detail?all_tenants=True (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7eff6f3a83a0>: Failed to establish a new connection: [Errno 113] No route to host'))
